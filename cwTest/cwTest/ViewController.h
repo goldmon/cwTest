@@ -7,9 +7,28 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <AudioUnit/AudioUnit.h>
+#import <AudioToolbox/AudioToolbox.h>
 @interface ViewController : UIViewController
+{
+     UILabel *frequencyLabel;
+    UIButton *playButton;
+    UISlider *frequencySlider;
+    AudioComponentInstance toneUnit;
+    
+@public
+    double frequency;
+    double sampleRate;
+    double theta;
+}
 
+@property (nonatomic, retain) IBOutlet UISlider *frequencySlider;
+@property (nonatomic, retain) IBOutlet UIButton *playButton;
+@property (nonatomic, retain) IBOutlet UILabel *frequencyLabel;
+
+- (IBAction)sliderChanged:(UISlider *)frequencySlider;
+- (IBAction)togglePlay:(UIButton *)selectedButton;
+- (void)stop;
 
 @end
 

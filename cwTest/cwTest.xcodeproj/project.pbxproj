@@ -10,7 +10,7 @@
 		E207A6CC1FB012A70087D035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E207A6CB1FB012A70087D035 /* main.m */; };
 		E207A6CF1FB012A70087D035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E207A6CE1FB012A70087D035 /* AppDelegate.m */; };
 		E207A6D21FB012A70087D035 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E207A6D11FB012A70087D035 /* ViewController.m */; };
-		E207A6D51FB012A70087D035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E207A6D31FB012A70087D035 /* Main.storyboard */; };
+		E207A6D51FB012A70087D035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E207A6D31FB012A70087D035 /* Main.storyboard */; settings = {ASSET_TAGS = (frequencyLabel, ); }; };
 		E207A6D71FB012A70087D035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E207A6D61FB012A70087D035 /* Assets.xcassets */; };
 		E207A6DA1FB012A70087D035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E207A6D81FB012A70087D035 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -105,6 +105,10 @@
 		E207A6BF1FB012A70087D035 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					frequencyLabel,
+					slider,
+				);
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "张科";
 				TargetAttributes = {
@@ -314,6 +318,7 @@
 				E207A6E01FB012A70087D035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
